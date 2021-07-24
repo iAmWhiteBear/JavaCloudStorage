@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.CloudView">
+   <TableView fixedCellSize="2.0" layoutX="14.0" layoutY="34.0" prefHeight="392.0" prefWidth="324.0">
+     <columns>
+       <TableColumn fx:id="clientFileName" editable="false" prefWidth="257.0" text="Filename" />
+       <TableColumn fx:id="clientFileSize" editable="false" prefWidth="66.0" text="size" />
+     </columns>
+   </TableView>
+   <TableView fixedCellSize="2.0" layoutX="457.0" layoutY="34.0" prefHeight="392.0" prefWidth="324.0">
+      <columns>
+         <TableColumn fx:id="serverFileName" editable="false" prefWidth="254.0" text="Filename" />
+         <TableColumn fx:id="serverFileSize" editable="false" prefWidth="69.0" text="size" />
+      </columns>
+   </TableView>
+   <Button fx:id="buttonUpload" layoutX="364.0" layoutY="167.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="74.0" text="&gt;&gt;" />
+   <Button fx:id="buttonDownload" layoutX="364.0" layoutY="230.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="74.0" text="&lt;&lt;" />
+   <Button fx:id="buttonDelete" layoutX="364.0" layoutY="318.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="74.0" text="Delete" />
+   <TextField fx:id="commandLine" layoutX="14.0" layoutY="514.0" prefHeight="27.0" prefWidth="774.0" />
+   <Label fx:id="labelOutput" layoutX="244.0" layoutY="450.0" prefHeight="48.0" prefWidth="292.0" text="output" />
+   <Label fx:id="labelUserDir" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="324.0" text="UserDir" />
+   <Label fx:id="labelServerDir" layoutX="457.0" layoutY="14.0" prefHeight="17.0" prefWidth="324.0" text="Label" />
+
+
+</AnchorPane>
